@@ -10,7 +10,7 @@ LOGGING_THROTTLE_FACTOR = 3  # Only log after this many seconds
 MAX_BRAKE = 400.0
 
 class Controller(object):
-    def __init__(self, self, vehicle_mass, fuel_capacity, brake_deadband, decel_limit,
+    def __init__(self, vehicle_mass, fuel_capacity, brake_deadband, decel_limit,
                  accel_limit, wheel_radius, wheel_base, steer_ratio, max_lat_accel, max_steer_angle):
         # TODO: Implement
         self.yaw_controller = YawController(wheel_base, steer_ratio, 0.1, max_lat_accel, max_steer_angle)
@@ -37,7 +37,7 @@ class Controller(object):
         self.log_time = rospy.get_time()
         #pass
 
-    def control(self, , current_vel, dbw_enabled, linear_vel, angular_vel):
+    def control(self, current_vel, dbw_enabled, linear_vel, angular_vel):
         # TODO: Change the arg, kwarg list to suit your needs
         # Return throttle, brake, steer
         if not dbw_enabled:
