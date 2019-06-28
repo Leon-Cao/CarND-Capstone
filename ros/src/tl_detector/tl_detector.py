@@ -59,6 +59,11 @@ class TLDetector(object):
         self.process_count = 0
 
 
+        self.last_wp = -1
+        self.state_count = 0
+        self.class_count = 0
+        self.process_count = 0
+        
         rospy.spin()
 
     def pose_cb(self, msg):
@@ -106,7 +111,8 @@ class TLDetector(object):
         Returns:
             int: index of the closest waypoint in self.waypoints
         """
-        #TODO implement
+        #TODO implement.. Updated by Abeer
+
         closest_idx = self.waypoint_tree.query([x, y], 1)[1]
         return closest_idx
 
@@ -172,7 +178,6 @@ class TLDetector(object):
         elif state == TrafficLight.RED:
             out = "red"
         return out
-
 
 if __name__ == '__main__':
     try:
