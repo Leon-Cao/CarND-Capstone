@@ -17,8 +17,8 @@ class Controller(object):
 	kp = 0.3
 	ki = 0.1
 	kd = 0.
-	mn = 0.  # min throttle
-	mx = 0.2 # max throttle
+	mn = 0.0  # min throttle
+	mx = 0.4  # max throttle
 	self.throttle_controller = PID(kp, ki, kd, mn, mx)
 
 	tau = 0.5 # 1/(2pi * tau) = cutoff frequency
@@ -62,6 +62,7 @@ class Controller(object):
 	elif throttle < .1 and vel_error < 0:
 	    throttle = 0
 	    decel = max(vel_error, self.decel_limit)
-	    brake = abs(decel)*self.vehicle_mass*self.wheel_radius # Torque N*m
+	    ##brake = abs(decel)*self.vehicle_mass*self.wheel_radius # Torque N*m
+            brake = min(400, (abs(decel) * self.vehicle_mass * self.wheel_radius))
 
         return throttle, brake, steering
