@@ -6,7 +6,7 @@
 | Member | Kenny Liao | irvingliao@gmail.com | Traffic Light Dectection and Integration, training guide |
 | Member | ChunYang Chen (John) | blues0730@gmail.com | Traffic Light Dectection Investigation and generation |
 | Member | Vivek Sharma | vivekmsit@gmail.com | Traffic Light Dectection Investigation and generation | 
-| OpenCV | Abeer Ghander | abeer.ghander@gmail.com | All python code and code reviewer |
+| Member | Abeer Ghander | abeer.ghander@gmail.com | All python code and code reviewer |
 
 ### Implementation Introduce
 #### Waypoint Update
