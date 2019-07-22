@@ -1,13 +1,4 @@
 ## Capstone Project Summary
-### Hands Free Team Introduce
-|       | Name   | Udacity Account | Task  |
-| :----: | :-------:|:-------------:| :-----:|
-| Leader | Yuec Cao (Leon) | skyue1@hotmail.com | Waypoint_update, Twist Control and Integration |
-| Member | Kenny Liao | irvingliao@gmail.com | Traffic Light Dectection and Integration, training guide |
-| Member | ChunYang Chen (John) | blues0730@gmail.com | Traffic Light Dectection Investigation and generation |
-| Member | Vivek Sharma | vivekmsit@gmail.com | Traffic Light Dectection Investigation and generation | 
-| Member | Abeer Ghander | abeer.ghander@gmail.com | All python code and code reviewer |
-
 ### Implementation Introduce
 #### Waypoint Update
  * LOOKAHEAD_WPS was changed from 200 to 130 to reduce the caculation of traffic light detection on Camera image.
